@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deep's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm Deep</h1>
+        <p>Web Developer | CSE Student</p>
+        <button onclick="window.location.href='#contact'">Contact Me</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="main-content">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer with a strong background in [JavaScript](w), [HTML](w), and [CSS](w).
+            I am always looking for new opportunities to improve my skills and create engaging, user-friendly websites.
+            Feel free to explore my portfolio below to see some of my projects.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="main-content">
+        <h2>My Work</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="details">
+                    <h3>Project 1</h3>
+                    <p>A responsive website I built for a local business.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="details">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce site designed for seamless shopping experience.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="details">
+                    <h3>Project 3</h3>
+                    <p>A personal blog template that I developed from scratch.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-content">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Deep's Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
