@@ -1,96 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
     <title>Deep's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <nav class="navbar">
+       <a href="#" class="logo">Portfolio.</a>
+       <ul>
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Portfolio</li>
+           <li><a href="#">Service</a></li>
+           <li><a href="#">Contact</a></li>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+       </ul>
+
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hi, I'm Deep</h1>
-        <p>Web Developer | CSE Student</p>
-        <button onclick="window.location.href='#contact'">Contact Me</button>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="main-content">
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate web developer with a strong background in [JavaScript](w), [HTML](w), and [CSS](w).
-            I am always looking for new opportunities to improve my skills and create engaging, user-friendly websites.
-            Feel free to explore my portfolio below to see some of my projects.
-        </p>
-    </section>
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="main-content">
-        <h2>My Work</h2>
-        <div class="portfolio">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="details">
-                    <h3>Project 1</h3>
-                    <p>A responsive website I built for a local business.</p>
-                    <a href="#">View Project</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <div class="details">
-                    <h3>Project 2</h3>
-                    <p>An e-commerce site designed for seamless shopping experience.</p>
-                    <a href="#">View Project</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3">
-                <div class="details">
-                    <h3>Project 3</h3>
-                    <p>A personal blog template that I developed from scratch.</p>
-                    <a href="#">View Project</a>
+    <section class="home">
+        <div class="home-info">
+            <h1>Deep's Portfolio</h1>
+            <h2>I am a
+                <span style="--i:1"data-text="Frontend Developer">Frontend Developer</span>
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur iure maxime repellat aspernatur placeat nulla voluptates ipsum, ea perspiciatis accusantium quaerat ratione cumque laudantium similique laborum itaque ullam tenetur.</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://www.facebook.com/arif.shahriar.deep.2024"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/arifdeep75/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/md-arif-shahriar-deep-291138244/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/arifdeep75/arifdeep75.github.io"><i class='bx bxl-github'></i> </a>
                 </div>
             </div>
         </div>
+      
+        <div class="home-img">
+            <div class="img-box">
+              <div class="img-item">
+                  <img src="pp.png" alt="">
+              </div>
+            </div>
+            
+
+        </div>
+
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="main-content">
-        <h2>Contact Me</h2>
-        <form action="#">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Deep's Portfolio | All Rights Reserved</p>
-    </footer>
-
 </body>
-
 </html>
